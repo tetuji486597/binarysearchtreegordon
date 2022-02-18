@@ -1,10 +1,5 @@
+import java.awt.*;
 import java.awt.geom.AffineTransform;
-import java.awt.Font;
-import java.awt.Graphics2D;
-import java.awt.Graphics;
-import java.awt.Toolkit;
-import java.awt.Point;
-import java.awt.Dimension;
 import javax.swing.JPanel;
 
 //
@@ -34,6 +29,7 @@ class GraphicBinaryTreeVisualizer extends JPanel
         this.height = Math.min(600, this.screenSize.height);
         this.nodePadding = new Point(2, 3);
         this.setPreferredSize(new Dimension(this.width, this.height));
+        setBackground(Color.pink);
     }
 
     public void update(final TreeNode tree) {
