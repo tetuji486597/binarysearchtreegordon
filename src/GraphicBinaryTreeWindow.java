@@ -28,7 +28,7 @@ public class GraphicBinaryTreeWindow extends JFrame
         final BSTcontroller controller = new BSTcontroller(userInputPanel, graphicBinaryTreeVisualizer);
         final JPanel infoPanel = new JPanel();
         infoPanel.setLayout(new BoxLayout(infoPanel, BoxLayout.X_AXIS));
-        infoPanel.add(getCenterAlignedJLabel("Please input a node to add it to the Binary Tree"));
+        infoPanel.add(getCenterAlignedJLabel("Please input a node and hit enter on your keyboard to add it to the Binary Tree"));
         this.add(infoPanel);
         this.add(userInputPanel);
         this.add(graphicBinaryTreeVisualizer);
